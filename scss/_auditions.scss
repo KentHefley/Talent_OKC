@@ -1,0 +1,135 @@
+//card
+
+.auditions {
+  @include section;
+  @include animate;
+
+  .card {
+    width: 90%;
+    max-width: 15rem;
+    margin-top: 10rem;
+
+    img {
+      width: 100%;
+    }
+
+    &_content {
+      color: $secondary;
+      background-color: $links;
+      padding: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    p,
+    a {
+      font-size: 0.75rem;
+    }
+
+    .time {
+      margin-bottom: 0.5rem;
+    }
+
+    .youth,
+    .adults {
+      text-decoration: underline;
+    }
+
+    .saturday,
+    .saturday2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .divider {
+      width: 75%;
+      height: 2px;
+      background-color: $secondary;
+      margin: 1rem auto;
+    }
+
+    .competition {
+      margin-bottom: 0.5rem;
+    }
+
+    .questions {
+      font-size: 0.75rem;
+    }
+
+    .address {
+      margin-top: 1rem;
+      color: $accent;
+    }
+  }
+}
+
+//tabs
+.tab {
+  margin-top: 2rem;
+  color: $links;
+  width: 90%;
+
+  .tabs {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    // padding: 0.2rem;
+    color: $background;
+    background-color: $accent;
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+    // border-bottom: 1px solid $links;
+
+    &_ind {
+      cursor: pointer;
+      padding: 10px;
+      transition: all 0.2s ease;
+    }
+  }
+
+  [data-tab-content] {
+    display: none;
+  }
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs_ind.active {
+  color: $links;
+}
+
+//tab content
+
+.tab_content {
+  height: 3rem;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+
+.audition_images {
+  margin-top: 8rem;
+  max-width: 175px;
+  display: none;
+
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

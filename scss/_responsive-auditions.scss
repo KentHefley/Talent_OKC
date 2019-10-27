@@ -1,0 +1,64 @@
+@include small {
+  .tab {
+    .tabs {
+      flex-direction: row;
+    }
+  }
+}
+
+@include medium {
+  .tab {
+    width: 440px;
+    margin-top: 10rem;
+  }
+  .auditions {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+@include large {
+  .tab {
+    width: 600px;
+  }
+}
+
+@include xlarge {
+  .audition_images {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-top: 10rem;
+  }
+}
+
+@include fullscreen {
+  .auditions {
+    .card {
+      margin-top: 15rem;
+      max-width: 17rem;
+    }
+
+    .tab {
+      width: 800px;
+      margin-top: 15rem;
+    }
+
+    .tabs {
+      font-size: 1.2rem;
+      &_ind {
+        padding: 20px;
+      }
+    }
+
+    .tab_content p {
+      font-size: 1.5rem;
+    }
+
+    .audition_images {
+      margin-top: 15rem;
+      max-width: 220px;
+    }
+  }
+}

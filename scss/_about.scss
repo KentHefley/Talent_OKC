@@ -1,0 +1,26 @@
+.about {
+  @include section;
+  margin-top: 9rem;
+  color: $links;
+  @include animate;
+
+  &_headline {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+
+  &_images {
+    margin-bottom: 4rem;
+    display: none;
+  }
+}

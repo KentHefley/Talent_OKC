@@ -1,0 +1,110 @@
+.sign-up {
+  @include section;
+  @include animate;
+  &_copy {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    color: $links;
+    width: 90%;
+  }
+
+  &_heading {
+    font-size: 2rem;
+  }
+
+  &_paragraph {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  span {
+    color: $accent;
+  }
+
+  &_form {
+    color: $links;
+    background-color: $accent;
+    padding: 2rem;
+    font-size: 0.75rem;
+    width: 95%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 50px;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .age {
+      width: 25%;
+    }
+
+    button {
+      color: #fff;
+      width: 150px;
+      padding: 10px 5px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      border: none;
+      background-color: $background;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  color: $links;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_text {
+    margin-bottom: 15px;
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_head {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+    .social {
+      &_icon {
+        width: 35px;
+        margin-right: 10px;
+      }
+
+      .youtube {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@include medium {
+  .main-sign-up {
+    overflow: hidden;
+    .sign-up {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 12rem;
+      // margin-bottom: 1rem;
+
+      &_copy {
+        margin: 0;
+        max-width: 400px;
+      }
+    }
+
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+  }
+}
+
+@include large {
+  .main-sign-up {
+    .sign-up {
+      &_copy {
+        max-width: 600px;
+        .sign-up_heading {
+          font-size: 2.6rem;
+        }
+        .sign-up_paragraph {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+@include fullscreen {
+  .main-sign-up {
+    .sign-up {
+      margin-top: 15rem;
+      margin-bottom: 9rem;
+
+      &_form {
+        max-width: 500px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .sign-up_paragraph {
+    font-size: 1.5rem;
+  }
+}

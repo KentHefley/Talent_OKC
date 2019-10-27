@@ -1,0 +1,56 @@
+@include medium {
+  .main_header {
+    .menu_toggle {
+      display: none;
+    }
+    .main_nav {
+      display: flex;
+      flex-direction: row;
+
+      .menu_items {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+
+        .menu_item {
+          margin-right: 2.5rem;
+          margin-bottom: 0;
+          // animation: slideIn 0.5s forwards;
+          &:nth-of-type(4) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .hero {
+    .talent {
+      margin-top: 10rem;
+      width: 60%;
+
+      &_logo {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+  .background_image {
+    background-size: 100px;
+  }
+}
+
+@include large {
+  .hero {
+    .talent {
+      width: 30%;
+      margin-top: 10rem;
+      &_logo {
+        margin-bottom: 12rem;
+      }
+    }
+  }
+
+  .home_background {
+    background-position: bottom;
+    background-size: 150px;
+  }
+}

@@ -1,0 +1,84 @@
+//fonts
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap");
+
+//colors
+
+$background: #0b0807;
+$accent: crimson;
+$secondary: #707070;
+$links: #eee;
+
+//variables
+
+//mixins
+
+@mixin delay {
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: ($i - 1) * (0.1s);
+    }
+  }
+}
+
+@mixin animation {
+  animation: slideIn 0.5s forwards;
+}
+
+@mixin section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+//media query mixins
+
+@mixin small {
+  @media (min-width: 536px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1079px) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin fullscreen {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+//fade in animation for sections
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin animate {
+  animation: fadeIn 1s;
+}

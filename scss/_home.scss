@@ -1,0 +1,24 @@
+.home_background {
+  background: $background url("../img/background.png") no-repeat bottom center;
+  background-size: 80px;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.hero {
+  @include section;
+  @include animate;
+
+  .talent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 8rem;
+
+    &_logo {
+      margin-bottom: 3rem;
+    }
+  }
+}
