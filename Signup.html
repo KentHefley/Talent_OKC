@@ -57,8 +57,8 @@
         <form
           class="sign-up_form"
           name="contact"
-          method="POST"
-          date-netlify="true"
+          action="POST"
+          data-netlify="true"
         >
           <div>
             <label for="name">Name</label>
@@ -102,6 +102,7 @@
               required
             />
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Submit</button>
         </form>
       </section>
